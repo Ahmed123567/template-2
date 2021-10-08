@@ -179,14 +179,15 @@
 }
 
 #sec1 .grid{
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-  	grid-gap: 20px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 #sec1 .grid .gi{
 	margin: 100px 0 0 0;
 	display: flex;
+	flex-basis: 48%;
 }
 
 #sec1 .grid .gi i{
@@ -208,6 +209,7 @@
 		text-align: center;
 		width: 62%;
 		flex-flow: column;
+		flex-basis: 100%;
 	}
 }
 
@@ -274,7 +276,7 @@
 }
 
 #sec3 ul li{
-	margin: 0 30px 0 5px;
+	margin: 0 10px 0 5px;
 	padding: 5px;
 	border-radius: 5px;
 }
